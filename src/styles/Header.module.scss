@@ -1,0 +1,82 @@
+.Header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+}
+.HeaderLeft{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+.HeaderLeft ul{
+    display: none;
+}
+.HeaderLeft img{
+    width: 100px;
+    height: 30px;
+}
+.HeaderRight{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.HeaderText{
+    display: none;
+}
+.HeaderSignUp{
+    display: none;
+}
+
+@media (min-width: 800px) {
+    .Header{
+        justify-content: space-between;
+        // padding: 30px 40px 30px 40px;
+        gap: 80px;
+        width: 84%;
+        margin: auto;
+    }
+    .HeaderMenu{
+        display: none;
+    }
+    .HeaderText{
+        display: contents;
+        color: hsl(257, 7%, 63%);
+    }
+    .HeaderText:hover{
+        cursor: pointer;
+        color: hsl(260, 8%, 14%);
+    }
+    .HeaderSignUp{
+        display: block;
+        border: none;
+        border-radius: 24px;
+        padding: 10px;
+        width: 90px;
+        color: white;
+        background-color: hsl(180, 66%, 49%);
+    }
+    .HeaderSignUp:hover{
+        cursor: pointer;
+        opacity: 50%;
+    }
+    .HeaderLeft ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10px;
+    }
+    .HeaderRight{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        gap: 30px;
+    }
+}

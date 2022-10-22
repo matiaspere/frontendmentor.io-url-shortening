@@ -1,0 +1,242 @@
+.Main{
+    background-color:  hsla(258, 7%, 63%, 0.12);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+// Input
+.MainInput{
+    background-color: hsl(257, 27%, 26%);
+    background-image: url('../images/bg-shorten-mobile.svg');
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 12px;
+    position: absolute;
+    top: -67.5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80%;
+}
+.MainInput input{
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+}
+.MainInput button{
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 6px;
+    padding: 10px;
+    border: none;
+    color: white;
+}
+.MainInput button:hover{
+    cursor: pointer;
+    background-color: hsl(180, 82%, 65%);
+}
+// Links Container
+.MainLinks{
+    margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.LinkContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    padding: 15px 0;
+    width: 300px;
+
+    border-radius: 8px;
+}
+.LinkContainer p:nth-child(2){
+    color: hsl(180, 66%, 49%);
+}
+.LinkContainer button{
+    background-color: hsl(180, 66%, 49%);
+    border: none;
+    color: white;
+    width: 100px;
+    padding: 5px;
+    border-radius: 8px;
+    height: 35px;
+}
+.LinkContainer button:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+// Titulo de Main Content
+.MainContentTitle{
+    margin-top: 70px;
+    text-align: center;
+}
+.MainContentTitle p:nth-child(1){
+    color: hsl(257, 27%, 26%);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.MainContentTitle p:nth-child(2){
+    color: hsl(257, 7%, 63%);
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+// Main Features
+.MainContentContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+.FeaturesContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 300px;
+    height: 200px;
+    background-color: white;
+    border-radius: 4px;
+    position: relative;
+}
+.FeaturesContainer div {
+    background-color: hsl(257, 27%, 26%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -43.5px;
+    border-radius: 50%;
+    padding: 20px;
+}
+.FeaturesContainer p:nth-child(2){
+    margin-top: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: hsl(257, 27%, 26%);
+
+}
+.FeaturesContainer p:nth-child(3){
+    padding: 0 30px;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: hsl(0, 0%, 75%);
+}
+hr{
+    border: 3px solid hsl(180, 66%, 49%);
+    background-color: hsl(180, 66%, 49%);
+    height: 90px;
+}
+// Main Banner
+.MainBanner{
+    margin-top: 60px;
+    background-image: url('../images/bg-boost-mobile.svg');
+    background-color: hsl(257, 27%, 26%);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.MainBanner p{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: white;
+}
+.HeroButton{
+    display: block;
+    border: none;
+    border-radius: 24px;
+    font-size: 1.1rem;
+    padding: 15px;
+    width: 180px;
+    color: white;
+    background-color: hsl(180, 66%, 49%);
+}
+@media (min-width: 800px) {
+    .MainInput{
+        background-image: url('../images/bg-shorten-desktop.svg');
+        background-position: bottom right;
+        flex-direction: row;
+        top: -40px;
+    }
+    .MainInput input{
+        width: 80%;
+    }
+    .MainInput button{
+        width: 15%;
+    }
+    .MainLinks{
+        margin-top: 50px;
+    }
+    .LinkContainer{
+        display: grid;
+        grid-template-columns: 8fr 2fr 1fr;
+        align-items: center;
+        gap: 20px;
+        background-color: white;
+        padding: 15px;
+        width: 81%;
+        border-radius: 8px;
+    }
+    // /Titulo de Main Content
+    .MainContentTitle p:nth-child(2){
+        margin: auto;
+        width: 500px;
+    }
+    // Main Features
+    .MainContentContainer{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+    }
+    .MainContentContainer :nth-child(3){
+        margin-top: 60px;
+    }
+    .MainContentContainer :nth-child(5){
+        margin-top: 120px;
+    }
+    .FeaturesContainer{
+        max-width: 25%;
+        text-align: start;
+        align-items: flex-start;
+    }
+    .FeaturesContainer p:nth-child(2){
+        padding-left: 30px;
+    }
+    .FeaturesContainer div{
+        left: 30px;
+    }
+    hr{
+        height: 2px;
+        width: 30px;
+    }
+    // Main Banner
+    .MainBanner{
+        background-image: url('../images/bg-boost-desktop.svg');
+        height: 200px;
+        object-fit: cover;
+        
+    }
+
+}

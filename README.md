@@ -4,7 +4,7 @@
 
 
 
-In this challenge i use **reactjs** for the funcionality, **local storage **for data store and **sass** for layout.
+In this challenge i use **reactjs** for the funcionality, **localstorage **for data store and **sass** for layout.
 
 
 
